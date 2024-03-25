@@ -20,7 +20,7 @@
               </button>
             </div>
             <div class="imgAbout">
-              <img src="/img/hero.png" alt="about img" />
+              <img src="/img/insta.gif" alt="about img" />
             </div>
           </div>
         </div>
@@ -172,11 +172,11 @@
     <!-- Script main -->
     <script src="/js/main.js"></script>
     <script>
-   document.addEventListener('resize', function () {
-  // Check if the screen width is greater than 1440px
-  const tabContents = document.querySelectorAll('.tab-content');
-    const defaultOpenIndex = 1; // Index for Tab 2, assuming a 0-based index.
+
+window.onresize = () => { 
   if (window.innerWidth > 1440) {
+    const tabContents = document.querySelectorAll('.tab-content');
+    const defaultOpenIndex = 1; // Index for Tab 2, assuming a 0-based index.
     // Function to hide all contents
     function hideAllContents() {
       tabContents.forEach((content, index) => {
@@ -192,7 +192,6 @@
       content.style.visibility = 'visible';
       content.style.display = 'flex';  
     }
-
     // Initialize the page with the default tab's content visible
     showContent(defaultOpenIndex);
 
@@ -206,7 +205,33 @@
         showContent(defaultOpenIndex); // Revert to default content on mouse leave
       });
     });
+  } else {
+    const element = document.querySelectorAll('.tab-content');
+    if(element) {
+      for(let i = 0 ;  i < element.length; i++){
+                 // Apply styles using JavaScript
+         const content = element[i].querySelector('.content');
+      content.style.visibility = 'visible';
+      content.style.display = 'flex'; 
+      element[i].style.display = "flex";
+      element[i].style.flexDirection = "row";
+      element[i].style.alignItems = "center";
+      element[i].style.justifyContent = "center";
+      element[i].style.marginRight = "20px";
+      element[i].style.marginBottom = "50px";
+      }
+
+    } else {
+      console.log("err");
+    }
+ 
   }
+}
+
+   document.addEventListener('resize', function () {
+  // Check if the screen width is greater than 1440px
+ 
+  
 });
 
     </script>

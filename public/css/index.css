@@ -23,6 +23,7 @@
   position: absolute;
   right: -3%;
   top: 5%;
+  background-image: url(/img/insta.gif);
 }
 #about .aboutContent {
   width: 50%;
@@ -323,10 +324,10 @@ font-weight: bolder;
   margin-top: 20px;
 }
 .part3 .right{
-  width: 50%;
-  img {
-    margin-left: 40px;
-  }
+  width: 50%;    
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .cta {
   background: rgba(26, 37, 92, 1);
@@ -423,8 +424,18 @@ font-weight: bolder;
   bottom: 0.2%;
   border: 60px;
 }
-
+.addOn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  margin-bottom: 50px;
+}
 @media only screen and (max-width: 1440px) {
+  .wrap {
+    padding: 20px;
+  }
   .accordion {
     display: flex;
     width: 100%;
@@ -432,16 +443,74 @@ font-weight: bolder;
     flex-direction: column;
     height: 100%;
   }
-.tab-content {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-right: 20px;
-    margin-bottom: 50px;
-}
+
 .platform {
   height: 100%;
 }
 
+}
+
+@media only screen and (max-width: 960px) {
+  .reason__header {
+    width: 70%;
+  }
+  .part1, .part2, .part3 {
+    display: block;
+  }
+  .part1 .left {
+    width: 100%;
+  }
+  .part1 .left h2{
+    text-align: center;
+    margin-right: 0;
+  }
+  .part1 .left p{
+    text-align: center;
+    margin-right: 0px;
+  }
+  .part1 .right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.part2 {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.part2 .left {
+  width: 100%;
+  margin-left: 0px;
+}
+.part2 .left h2{
+  text-align: center;
+  margin-right: 0;
+}
+.part2 .left p{
+  text-align: center;
+  margin-right: 0px;
+}
+.part2 .right {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.part3 .left {
+  width: 100%;
+}
+.part3 .left h2{
+  text-align: center;
+  margin-right: 0;
+}
+.part3 .left p{
+  text-align: center;
+  margin-right: 0px;
+}
+.part3 .right {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 }
