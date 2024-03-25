@@ -1,0 +1,71 @@
+.footer {
+  background: linear-gradient(180deg, #fefeff, #ebeeff);
+}
+#containerDownload {
+  background: linear-gradient(180deg, #fefeff, #ebeeff);
+  text-align: center;
+  .hide {
+    display: none;
+  }
+}
+.downloadContent {
+  padding: 100px 0;
+}
+.downloadContent .available {
+  padding: 5px 15px;
+  text-align: center;
+  border-radius: 30px;
+  background-color: rgba(8, 102, 255, 0.1);
+  color: #0866ff;
+  font-family: 'Lato';
+  font-size: 20px;
+  margin: 0;
+}
+.downloadContent .available .windows {
+  font-family: 'LatoBold';
+  font-weight: 700;
+}
+.downloadContent .autoface {
+  text-align: center;
+  font-family: 'LatoBold';
+  font-weight: 700;
+  font-size: 18px;
+  margin: 2% 0;
+}
+.downloadContent .btnDown {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  padding: 8px 30px;
+  align-items: center;
+  background-color: #0866ff;
+  border-radius: 30px;
+  cursor: pointer;
+  margin: 0 auto;
+  color: #eef5ff;
+  border: 0;
+  font-family: 'VisbyRoundCFBold';
+  font-size: 18px;
+}
+.downloadContent .hr {
+  margin: 5% auto;
+  height: 1px;
+  width: 124px;
+  background: #2a86ff;
+}
+.downloadContent .work {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  font-family: 'LatoBold';
+  font-weight: 700;
+  font-size: 58px;
+  margin: 2% 0;
+}
+.downloadContent .video video {
+  margin: 0 auto;
+  width: 756px;
+  height: 406px;
+  border-radius: 30px;
+}

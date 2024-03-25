@@ -1,0 +1,51 @@
+.wrapper {
+  max-width: 100%;
+  width: 900px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 90vh;
+}
+.container {
+  line-height: 1.8;
+  text-align: justify;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid transparent;
+  border-radius: 4px;
+  position: relative;
+  z-index: 3;
+  text-decoration: none;
+  overflow: hidden;
+  display: block;
+  outline: none;
+  -webkit-box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.1);
+  padding: 6% 8%;
+}
+header {
+  margin: 0;
+  padding: 0;
+}
+h3,
+h4,
+.termOfServiceTitle {
+  color: #115bb7;
+  font-family: 'SVN-Product Sans' !important;
+}
+
+h3 {
+  text-align: center;
+  margin-top: 10px;
+}
+p {
+  font-family: 'Product Sans';
+}
+section {
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 8px;
+}
+ul {
+  list-style: none;
+}

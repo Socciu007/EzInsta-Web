@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include ('../partials/head') %>
+  </head>
+  <body>
+    <header><%- include ('../partials/header') %></header>
+    <main>
+      <div class="hero_section">
+        <div class="wrap">
+          <div id="about">
+            <div class="aboutContent">
+              <h1><%= __('Instagram automation tool')%></h1>
+              <h1 style="color: rgba(13, 19, 46, 1)"><%= __('Automate multiple Instagram accounts')%></h1>
+              <p class="detailContent">
+                <%= __('Save time and get REAL results on Instagram. Ezinsta makes it easy.')%>
+              </p>
+              <button class="downNow" onclick="navigateToDownload()">
+                <p><%= __('Try for free')%></p>
+              </button>
+            </div>
+            <div class="imgAbout">
+              <img src="/img/hero.png" alt="about img" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="hidemyacc">
+        <div class="wrap">
+          <div class="contain">
+            <div class="imgHidemyacc">
+              <img src="/img/hidemyacc.png" alt="hidemyacc img" />
+            </div>
+            <div class="hidemyaccContent">
+              <p class="title"><%= __('Antidetect that cannot be detected')%></p>
+              <img src="/img/hidemyacc_text.png" alt="Hidemyacc"></img>
+              <p class="detail">
+  <%= __('By using ') %><strong><%= __('Antidetect Browser') %></strong><%= __(' technology from Hidemyacc, EzInsta has the ability to automate unlimited accounts with unique browser fingerprint.') %>
+</p>
+
+              <button
+                class="explore"
+                href="https://hidemyacc.com"
+                target="_blank"
+                onclick="navigateToDownload('hidemyacc')"
+              >
+                <p><%= __('See how it works')%></p>
+                <img src="/img/north_east1.png" alt="icon next" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="platform">
+        <div class="wrap">
+          <h1>  <%= __('The platform that can help you with')%></h1>
+          <div class="accordion">
+              <div class="tab-content" >
+                <div class="tab">
+                  <p class="title-platform"> <%= __('Account banned')%></p>
+                  <p><%= __('Your Instagram accounts are locked, restricted, or shadowbanned, even though you’ve created a new account.')%></p>
+                </div>
+                <div id="content1" class="content">
+                  <img src="/img/account_banned.png" alt="Account banned">
+                </div>
+              </div>
+              <div class="tab-content active" >
+                <div class="tab">
+                  <p class="title-platform"> <%= __('Difficulty in automation')%></p>
+                  <p><%= __('Setting up automation for multiple accounts requires coding, or the automation setup is quite complicated.')%></p>
+                </div>
+                <div id="content2" class="content">
+                  <img src="/img/difficulty.png" alt="difficulty">
+                </div>
+              </div>
+              <div class="tab-content" >
+                <div class="tab">
+                  <p class="title-platform"> <%= __('Handling multiple accounts')%></p>
+                  <p><%= __('Difficulty in managing and automating multiple accounts simultaneously.')%></p>
+                </div>
+                <div id="content3" class="content">
+                  <img src="/img/handle.png" alt="handle multiple account">
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="reason">
+        <div class="wrap">
+          <div class="reason__container">
+            <div class="reason__header">
+              <h1><%= __('Why EzInsta?')%></h1>
+              <p><%= __('EzInsta adapts to your unique requirements, ensuring a customized automation experience.')%></p>
+            </div>
+            <div class="reason__content">
+              <div class="part1">
+                <div class="left">
+                  <h2><%= __('Non-code Automation')%></h2>
+                  <p><%= __('Automate like a real user in a few steps. With simple drag-and-drop commands, you can freely tailor your Instagram Automation Scripts without any coding skills needed.')%></p>
+                </div>
+                <div class="right">
+                  <img src="/img/non-code.png" alt="non-code">
+                </div>
+              </div>
+              <div class="part2">
+                  <div class="right">
+                  <img src="/img/fingerprint.png" alt="fingerprint">
+                </div>
+                <div class="left">
+                  <h2><%= __('Antidetect Technology')%></h2>
+                  <p><%= __('With the newest Antidetect technology from Hidemyacc, EzInsta can cover device information, with each profile acting as a new device.')%></p>
+                </div>
+              
+              </div>
+              <div class="part3">
+                <div class="left">
+                  <h2><%= __('User-friendly Interface')%></h2>
+                  <p><%= __('All setup features, automation, and tabs are easy to find. Now you can streamline your workflow and save you valuable time.')%></p>
+                </div>
+                <div class="right">
+                  <img src="/img/interface.png" alt="interface">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cta">
+        <div class="wrap">
+          <div class="cta__header">
+            <p> <%= __('Take your ') %><strong><%= __('Instagram') %></strong></p>
+            <p><%= __('Business to the Next Level')%></p>
+            <h5><%= __('Boost your productivity and earn 10x faster')%></h5>
+          </div>
+          <div class="cta__main">
+            <button class="cta__button"><%= __('Install now')%>
+            <img src="/img/north_east.png" alt="northd">
+            </button>
+          </div>
+          <div class="cta__bg"></div>
+          <div class="cta__footer">
+            <div class="part">
+              <img src="/img/cta_point.png" alt="coin">
+              <p><%= __('30 free profiles')%></p>
+            </div>
+                                 <div class="part">
+              <img src="/img/cta_point.png" alt="coin">
+              <p><%= __('No credit-card required')%></p>
+            </div>
+                        <div class="part">
+              <img src="/img/cta_point.png" alt="coin">
+              <p><%= __('Free 3-day trial')%></p>
+            </div>
+   
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer><%- include ('../partials/footer') %></footer>
+    <!-- Script bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Script swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- Script main -->
+    <script src="/js/main.js"></script>
+    <script>
+   document.addEventListener('DOMContentLoaded', function () {
+  // Check if the screen width is greater than 1440px
+  const tabContents = document.querySelectorAll('.tab-content');
+    const defaultOpenIndex = 1; // Index for Tab 2, assuming a 0-based index.
+  if (window.innerWidth > 1440) {
+
+
+    // Function to hide all contents
+    function hideAllContents() {
+      tabContents.forEach((content, index) => {
+          content.querySelector('.content').style.visibility = 'hidden';
+          content.querySelector('.content').style.display = 'none';
+      });  
+    }
+
+    // Function to show content
+    function showContent(index) {
+      hideAllContents(); // First, hide all contents
+      const content = tabContents[index].querySelector('.content');
+      content.style.visibility = 'visible';
+      content.style.display = 'flex';  
+    }
+
+    // Initialize the page with the default tab's content visible
+    showContent(defaultOpenIndex);
+
+    // Add hover event listeners to each tab-content
+    tabContents.forEach((tabContent, index) => {
+      tabContent.addEventListener('mouseenter', () => {
+        showContent(index); // Show hovered content
+      });
+
+      tabContent.addEventListener('mouseleave', () => {
+        showContent(defaultOpenIndex); // Revert to default content on mouse leave
+      });
+    });
+  } else {
+     function showContent(index) {
+      const content = tabContents[index].querySelector('.content');
+      content.style.visibility = 'visible';
+      content.style.display = 'flex';  
+    }
+       tabContents.forEach((index) => {
+         showContent(index);
+       })
+  }
+});
+
+    </script>
+  </body>
+</html>

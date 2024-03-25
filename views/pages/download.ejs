@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include ('../partials/head') %>
+  </head>
+  <body>
+    <div id="containerDownload">
+      <header><%- include ('../partials/header') %></header>
+      <main>
+        <div class="downloadContent">
+          <span class="available"><%= __('AVAILABLE FOR')%> <span class="windows"><%= __('WINDOWS')%></span></span>
+          <h1 class="autoface">FACEBOOK AUTOMATION</h1>
+          <button class="btnDown"><%= __('DOWNLOAD')%> <img src="/img/icon_downloadWhite.png" alt="icon download" /></button>
+          <div class="hr"></div>
+          <h1 class="work"><img src="/img/icon_youtubeRed.png" alt="" /><%= __('How it works?')%></h1>
+          <div class="video">
+            <video width="320" height="240" controls>
+              <source src="https://youtu.be/SqPWsY82cAw?si=7QM19tn6kbYfsNNU" type="video" />
+              <%= __('Your browser does not support the video tag.')%>
+            </video>
+          </div>
+        </div>
+      </main>
+      <footer><%- include ('../partials/footer') %></footer>
+    </div>
+  </body>
+</html>
