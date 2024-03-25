@@ -208,15 +208,6 @@
         showContent(defaultOpenIndex); // Revert to default content on mouse leave
       });
     });
-  } else {
-     function showContent(index) {
-      const content = tabContents[index].querySelector('.content');
-      content.style.visibility = 'visible';
-      content.style.display = 'flex';  
-    }
-       tabContents.forEach((index) => {
-         showContent(index);
-       })
   }
 });
 
