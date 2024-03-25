@@ -413,20 +413,20 @@ font-weight: bolder;
   position: relative;
 }
 .cta__bg{
-   background-image: url(/img/eclipse.png);
-   width: 100%;
-height: 350px;
+  background-image: url(/img/eclipse.png);
+  width: 100%;
+  height: 350px;
   background-position: center;
   background-size: cover;
-background-repeat: no-repeat;
-position: absolute;;
-bottom: 0.2%;
-border: 60px;
+  background-repeat: no-repeat;
+  position: absolute;;
+  bottom: 0.2%;
+  border: 60px;
 }
 
 @media only screen and (max-width: 1440px) {
   .accordion {
-        display: flex;
+    display: flex;
     width: 100%;
     justify-content: space-between;
     flex-direction: column;

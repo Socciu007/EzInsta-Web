@@ -172,13 +172,11 @@
     <!-- Script main -->
     <script src="/js/main.js"></script>
     <script>
-   document.addEventListener('DOMContentLoaded', function () {
+   document.addEventListener('resize', function () {
   // Check if the screen width is greater than 1440px
   const tabContents = document.querySelectorAll('.tab-content');
     const defaultOpenIndex = 1; // Index for Tab 2, assuming a 0-based index.
   if (window.innerWidth > 1440) {
-
-
     // Function to hide all contents
     function hideAllContents() {
       tabContents.forEach((content, index) => {
