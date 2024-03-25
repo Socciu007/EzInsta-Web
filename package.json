@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --inspect index.js",
+    "start": "node .",
     "dev": "nodemon -i \"*.test.js\" .",
     "watch": "node-sass --watch views/scss/app.scss public/css/app.css",
     "test": "echo \"Error: no test specified\" && exit 1"

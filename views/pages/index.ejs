@@ -53,7 +53,7 @@
         </div>
       </div>
 
-      <div class="platform">
+      <div class="platform" id="problems">
         <div class="wrap">
           <h1>  <%= __('The platform that can help you with')%></h1>
           <div class="accordion">
@@ -88,7 +88,7 @@
           </div>
       </div>
 
-      <div class="reason">
+      <div class="reason" id="why-choose-us">
         <div class="wrap">
           <div class="reason__container">
             <div class="reason__header">
@@ -137,7 +137,7 @@
             <h5><%= __('Boost your productivity and earn 10x faster')%></h5>
           </div>
           <div class="cta__main">
-            <button class="cta__button"><%= __('Install now')%>
+            <button onclick="navigateToDownload()" class="cta__button"><%= __('Install now')%>
             <img src="/img/north_east.png" alt="northd">
             </button>
           </div>

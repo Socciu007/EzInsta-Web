@@ -37,35 +37,28 @@ app.get('/download', function (req, res) {
   });
 });
 app.get('/term-of-service', function (req, res) {
-  res.render('pages/TermOfService/termOfServiceChTraditional', {
-    cookies: req.cookies,
-  });
+  if (req && req.cookies && req.cookies.lang === 'vi') {
+    res.render(path.join(__dirname, 'views/pages/TermOfService/termOfServiceVi.ejs'));
+  } else {
+    res.render(path.join(__dirname, 'views/pages/TermOfService/termOfServiceEn.ejs'));
+  }
 });
-// index page
+
 app.get('/private-policy', function (req, res) {
-  res.render('pages/PrivatePolicy/privatePolicyVi', {
-    cookies: req.cookies,
-  });
+  if (req && req.cookies && req.cookies.lang === 'vi') {
+    res.render(path.join(__dirname, 'views/pages/PrivatePolicy/privatePolicyVi.ejs'));
+  } else {
+    res.render(path.join(__dirname, 'views/pages/PrivatePolicy/privatePolicyEn.ejs'));
+  }
 });
-// refund Vie page
-app.get('/refund-Vie', function (req, res) {
-  res.render('pages/refundPolicy/Vie', {
-    cookies: req.cookies,
-  });
+
+app.get('/refund-policy', function (req, res) {
+  if (req && req.cookies && req.cookies.lang === 'vi') {
+    res.render(path.join(__dirname, 'views/pages/refundPolicy/Vie.ejs'));
+  } else {
+    res.render(path.join(__dirname, 'views/pages/refundPolicy/Eng.ejs'));
+  }
 });
-// refund Eng page
-app.get('/refund-Eng', function (req, res) {
-  res.render('pages/refundPolicy/Eng', {
-    cookies: req.cookies,
-  });
-});
-// refund Chi page
-app.get('/refund-Chi', function (req, res) {
-  res.render('pages/refundPolicy/Chi', {
-    cookies: req.cookies,
-  });
-});
-// use res.render to load up an ejs view file
 
 app.listen(port);
 console.log('Server is listening on port ' + port);

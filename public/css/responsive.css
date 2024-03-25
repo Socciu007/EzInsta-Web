@@ -102,12 +102,12 @@
   .navbar_mobile .download p {
     margin: 0;
     font-weight: 500;
-    font-family: 'VisbyRoundCFBold';
+    font-family: 'Cabin';
   }
   .navbar_mobile .login,
   .navbar_mobile .download {
     color: #0866ff;
-    font-family: 'VisbyRoundCFBold';
+    font-family: 'Cabin';
     cursor: pointer;
     font-size: 18px;
   }
@@ -432,12 +432,12 @@
   .navbar_mobile .download p {
     margin: 0;
     font-weight: 500;
-    font-family: 'VisbyRoundCFBold';
+    font-family: 'Cabin';
   }
   .navbar_mobile .login,
   .navbar_mobile .download {
     color: #0866ff;
-    font-family: 'VisbyRoundCFBold';
+    font-family: 'Cabin';
     cursor: pointer;
     font-size: 18px;
   }

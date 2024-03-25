@@ -21,46 +21,30 @@
   font-family: 'Product Sans';
   font-style: normal;
   font-weight: 300;
-  src: local('VisbyRoundCF'), url('/font/VisbyRoundCF-Regular.otf') format('truetype');
+  src: local('VisbyRoundCF'), url('/font/Cabin-Regular.ttf') format('truetype');
 }
 
-@font-face {
-  font-family: 'VisbyRoundCFMedium';
-  font-style: normal;
-  font-weight: 600;
-  src: local('VisbyRoundCF'), url('/font/VisbyRoundCF-Medium.otf') format('truetype');
-}
-
-@font-face {
-  font-family: 'VisbyRoundCFBold';
-  font-style: normal;
-  font-weight: 700;
-  src: local('VisbyRoundCF'), url('/font/VisbyRoundCF-Bold.otf') format('truetype');
-}
 @font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: normal;
   src: local('Lato'), url('/font/Lato-Regular.ttf') format('truetype');
 }
+
+@font-face {
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/font/Cabin-Regular.ttf') format('truetype');
+}
+
 @font-face {
   font-family: 'LatoBold';
   font-style: normal;
   font-weight: 700;
   src: local('Lato'), url('/font/Lato-Bold.ttf') format('truetype');
 }
-@font-face {
-  font-family: 'LatoBlack';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Lato'), url('/font/Lato-Black.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'LatoLight';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Lato'), url('/font/Lato-Light.ttf') format('truetype');
-}
+
 *,
 *::before,
 *::after {

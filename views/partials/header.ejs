@@ -5,19 +5,19 @@
     <div class="navbar">
       <div class="navbar__left">
         <a href="/" class="logo"><img src="/img/Logo_text.png" alt="logo" /></a>
-        <a class="hidden hide" href="#usecase"><%= __("User's Problems")%></a>
-        <a class="hidden hide" href="#instruction"><%= __("Why choose us")%></a>
+        <a class="hidden hide" href="#problems"><%= __("User's Problems")%></a>
+        <a class="hidden hide" href="#why-choose-us"><%= __("Why choose us")%></a>
       </div>
       <div class="navbar__right hidden">
         <div class="translate">
           <div class="custom-select">
             <div class="selected-option" id="selectedOption">
-              <% if(cookies.lang == 'en'){ %>
-              <img src="/img/icon_USA.png" alt="icon USA" />
-              <span>En</span>
-              <% } else{ %>
-              <img src="/img/icon_VN.png" alt="icon USA" />
-              <span>Vi</span>
+              <% if(cookies.lang == 'vi'){ %>
+                <img src="/img/icon_VN.png" alt="icon USA" />
+                <span>Vi</span>
+                <% } else{ %>
+                  <img src="/img/icon_USA.png" alt="icon USA" />
+                  <span>En</span>
               <% } %>
             </div>
             <ul class="options">
@@ -49,12 +49,12 @@
         <div class="translate">
           <div class="custom-select" id="mobileCustomSelect">
             <div class="selected-option" id="selectedOptionMobile">
-              <% if(cookies.lang == 'en'){ %>
-              <img src="/img/icon_USA.png" alt="icon USA" />
-              <span>En</span>
-              <% } else{ %>
-              <img src="/img/icon_VN.png" alt="icon USA" />
-              <span>Vi</span>
+              <% if(cookies.lang == 'vi'){ %>
+                <img src="/img/icon_VN.png" alt="icon USA" />
+                <span>Vi</span>
+                <% } else{ %>
+                  <img src="/img/icon_USA.png" alt="icon USA" />
+                  <span>En</span>
               <% } %>
             </div>
             <ul class="options" id="mobileOptions">
