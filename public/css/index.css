@@ -389,7 +389,7 @@ font-weight: bolder;
   justify-content: space-between;
   align-items: center;
   margin: auto;
-  width: 40%;
+  width: 50%;
   padding-bottom: 60px;
   font-weight: 400;
 }
@@ -431,86 +431,4 @@ font-weight: bolder;
   justify-content: center;
   margin-right: 20px;
   margin-bottom: 50px;
-}
-@media only screen and (max-width: 1440px) {
-  .wrap {
-    padding: 20px;
-  }
-  .accordion {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    flex-direction: column;
-    height: 100%;
-  }
-
-.platform {
-  height: 100%;
-}
-
-}
-
-@media only screen and (max-width: 960px) {
-  .reason__header {
-    width: 70%;
-  }
-  .part1, .part2, .part3 {
-    display: block;
-  }
-  .part1 .left {
-    width: 100%;
-  }
-  .part1 .left h2{
-    text-align: center;
-    margin-right: 0;
-  }
-  .part1 .left p{
-    text-align: center;
-    margin-right: 0px;
-  }
-  .part1 .right {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.part2 {
-  display: flex;
-  flex-direction: column-reverse;
-}
-.part2 .left {
-  width: 100%;
-  margin-left: 0px;
-}
-.part2 .left h2{
-  text-align: center;
-  margin-right: 0;
-}
-.part2 .left p{
-  text-align: center;
-  margin-right: 0px;
-}
-.part2 .right {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.part3 .left {
-  width: 100%;
-}
-.part3 .left h2{
-  text-align: center;
-  margin-right: 0;
-}
-.part3 .left p{
-  text-align: center;
-  margin-right: 0px;
-}
-.part3 .right {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 }
