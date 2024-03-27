@@ -24,6 +24,8 @@
   right: -3%;
   top: 5%;
   background-image: url(/img/insta.gif);
+  box-shadow: blue 0px 0px 0px 2px inset,linear-gradient(107.09deg, #E1306C -20.68%, #9C61C3 56.89%, #FCAF45 129.94%);
+
 }
 #about .aboutContent {
   width: 50%;
