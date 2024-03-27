@@ -16,7 +16,7 @@
   text-align: center;
   font-weight: 700;
   color: #0D132E;
-  font-family: 'Lato';
+  font-family: 'Cabin';
   font-size: 48px;
   line-height: 61.03px;
   margin: 0;
@@ -24,7 +24,7 @@
 .downloadContent .available .windows {
   font-weight: 700;
   font-size: 48px;
-  font-family: 'LatoBold';
+  font-family: 'Cabin';
   margin: 15px 0;
   background-image: linear-gradient(90deg, #E1306C 0%, #9C61C3 54%, #FCAF45 100%);
  -webkit-background-clip: text;
@@ -61,7 +61,7 @@
   justify-content: center;
   align-items: center;
   gap: 25px;
-  font-family: 'LatoBold';
+  font-family: 'Cabin';
   font-weight: 700;
   font-size: 58px;
   margin: 2% 0;

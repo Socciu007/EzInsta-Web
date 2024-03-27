@@ -35,14 +35,14 @@
   border-radius: 30px;
   background-color: rgba(8, 102, 255, 0.1);
   color: #0866ff;
-  font-family: 'Lato';
+  font-family: 'Cabin';
   font-size: 20px;
   margin: 0;
 }
 #about .aboutContent h1,
 #hidemyacc .hidemyaccContent h1,
 #usecase h1 {
-  font-family: 'LatoBold';
+  font-family: 'Cabin';
   font-weight: 700;
   font-size: 52px;
   margin: 15px 0;
@@ -180,7 +180,7 @@
   }
 }
 .wrap h1 {
-  font-family: 'LatoBold';
+  font-family: 'Cabin';
   font-weight: 700;
   font-size: 52px;
   margin-top: 30px;
