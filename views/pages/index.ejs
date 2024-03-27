@@ -209,7 +209,7 @@ window.onresize = () => {
     if(element) {
       for(let i = 0 ;  i < element.length; i++){
                  // Apply styles using JavaScript
-         const content = element[i].querySelector('.content');
+      const content = element[i].querySelector('.content');
       content.style.visibility = 'visible';
       content.style.display = 'flex';
       element[i].style.display = "flex";
@@ -227,28 +227,29 @@ window.onresize = () => {
     if(element) {
       for(let i = 0 ;  i < element.length; i++){
                  // Apply styles using JavaScript
-         const content = element[i].querySelector('.content');
-      content.style.visibility = 'visible';
-      content.style.display = 'block';
-      element[i].style.display = "block";
-       element[i].style.width = "auto"
+        const content = element[i].querySelector('.content');
+        content.style.visibility = 'visible';
+        content.style.display = 'block';
+        element[i].style.display = "block";
+        element[i].style.width = "auto"
       }
   }
 }
 }
-   document.addEventListener('DOMContentLoaded', function () {
-    if(window.innerHeight > 1440){
+
+window.onload = () => {
+    if(window.innerWidth > 1440){
         // Check if the screen width is greater than 1440px
      const tabContents = document.querySelectorAll('.tab-content');
     const defaultOpenIndex = 1; // Index for Tab 2, assuming a 0-based index.
     // Function to hide all contents
     function hideAllContents() {
       tabContents.forEach((content, index) => {
+        
           content.querySelector('.content').style.visibility = 'hidden';
           content.querySelector('.content').style.display = 'none';
       });  
     }
-
     // Function to show content
     function showContent(index) {
       hideAllContents(); // First, hide all contents
@@ -269,9 +270,36 @@ window.onresize = () => {
         showContent(defaultOpenIndex); // Revert to default content on mouse leave
       });
     });
+    } else if (window.innerWidth > 600) {
+      const element = document.querySelectorAll('.tab-content');
+    if(element) {
+      for(let i = 0 ;  i < element.length; i++){
+                 // Apply styles using JavaScript
+      const content = element[i].querySelector('.content');
+      content.style.visibility = 'visible';
+      content.style.display = 'flex';
+      element[i].style.alignItems = "center";
+      element[i].style.justifyContent = "center";
+      element[i].style.marginBottom = "50px";
+      element[i].style.width = "100%"
+      }
+
+    }
+    } else {
+      const element = document.querySelectorAll('.tab-content');
+        if(element) {
+          for(let i = 0 ;  i < element.length; i++){
+                    // Apply styles using JavaScript
+            const content = element[i].querySelector('.content');
+            content.style.visibility = 'visible';
+            content.style.display = 'block';
+            element[i].style.display = "block";
+            element[i].style.width = "auto"
+          }
+      }
     }
 
-});
+}
 
     </script>
   </body>

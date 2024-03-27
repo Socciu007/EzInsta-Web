@@ -54,7 +54,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Product Sans';
+  font-family: 'Cabin';
   font-size: 18px;
 }
 html {
@@ -96,10 +96,10 @@ select {
   outline: none;
 }
 input::placeholder {
-  font-family: 'Product Sans';
+  font-family: 'Cabin';
 }
 select {
-  font-family: 'Product Sans';
+  font-family: 'Cabin';
 }
 td {
   font-weight: 400;
@@ -122,7 +122,7 @@ label,
 th {
   word-wrap: break-word;
   text-align: left;
-  font-family: 'Product Sans';
+  font-family: 'Cabin';
 }
 .blur {
   width: 100%;
@@ -176,13 +176,13 @@ a:focus {
 }
 .navbar__left a {
   font-size: 16px;
-  font-family: 'Product Sans';
+  font-family: 'Cabin';
   margin: 0;
   cursor: pointer;
   color: #26388A;
 }
 .navbar__left .logo {
-  font-family: 'Product Sans';
+  font-family: 'Cabin';
   font-weight: 700;
   font-size: 28px;
   color: #01162b;
@@ -251,7 +251,7 @@ a:focus {
 }
 .options a span,
 .selected-option span {
-  font-family: 'Product Sans';
+  font-family: 'Cabin';
   opacity: 0.8;
   font-size: 18px;
   color: #26388A;
@@ -267,7 +267,7 @@ a:focus {
 }
 .navbar__right .login,
 .navbar__right .download {
-  font-family: 'Product Sans';
+  font-family: 'Cabin';
   cursor: pointer;
   font-size: 18px;
 }
@@ -295,7 +295,7 @@ a:focus {
 }
 .navbar__right .download p {
   font-weight: 400;
-  font-family: 'Product Sans';
+  font-family: 'Cabin';
   background: linear-gradient(273.49deg, #E1306C -49.45%, #9C61C3 39.38%, #FCAF45 117.98%);
    -webkit-background-clip: text;
   background-clip: text;
